@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.profilemananger.ServiceStarterActivity" >
+
+    <Space 
+        android:layout_width="wrap_content"
+        android:layout_height="5dp" />
+    <LinearLayout
+        android:id="@+id/HorizontalLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal" >
+
+    <ImageButton
+        android:id="@+id/button_add_profile"
+        style="@style/AppTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/plus"
+        android:onClick="onAddProfile" />
+
+    <TextView
+        android:id="@+id/TextViewAddProfile"
+        android:layout_width="148dp"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:text="  Add Profile"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </LinearLayout>
+    <Space 
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />
+    
+    <ListView
+        android:id="@+id/list_view_profiles"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>
